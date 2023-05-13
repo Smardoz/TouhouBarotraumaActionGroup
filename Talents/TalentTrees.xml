@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TalentTrees>
+  <TalentTree jobidentifier="remiliahidden">
+    <SubTree identifier="remilia_primary" nameidentifier="talenttree.primary" type="primary">
+      <TalentOptions requiredtalents="1" maxchosentalents="1">
+        <TalentOption identifier="demonkingcradle"/>
+      </TalentOptions>
+    </SubTree>
+  </TalentTree>
+</TalentTrees>

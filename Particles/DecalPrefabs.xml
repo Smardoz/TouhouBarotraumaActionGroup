@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<prefabs>
+  <youmu_decal color="255,255,255,255" lifetime="6000" fadeouttime="30">
+    <sprite texture="%ModDir%/Images/Youmu_Items/Youmu_Decal.png" sourcerect="0,0,160,176" origin="0.5,0.5" />
+  </youmu_decal>
+  <remilia_decal color="255,255,255,255" lifetime="6000" fadeouttime="30">
+    <sprite texture="%ModDir%/Images/Remilia_Items/Remilia_Decal.png" sourcerect="0,0,160,176" origin="0.5,0.5" />
+  </remilia_decal>
+</prefabs>

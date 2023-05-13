@@ -1,0 +1,217 @@
+<Items>
+  <Item name="" identifier="youmupaint" category="Misc" maxstacksize="8" cargocontaineridentifier="chemicalcrate" description="" Tags="smallitem,touhoupaint" scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer secondary="storagecab" minamount="1" maxamount="2" spawnprobability="0.25" notcampaign="true"/>
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" amount="1" spawnprobability="0.1" />
+    <Price baseprice="100" minleveldifficulty="1">
+      <Price storeidentifier="merchantoutpost" multiplier="1.1" minavailable="1"/>
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantresearch" multiplier="1.2" minavailable="1"/>
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="1"/>
+      <Price storeidentifier="merchantmine" multiplier="1.2" minavailable="1"/>
+    </Price>
+    <InventoryIcon texture="%ModDir%/Images/Youmu_Items/Youmupaint_Icon.png" sourcerect="0,0,60,55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Images/Youmu_Items/Youmupaint_Sprite.png" sourcerect="0,0,37,71" depth="0.6" origin="0.5,0.5" />
+    <Body width="25" height="55" density="12" />
+	<Holdable slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="20" />
+      <RequiredItem identifier="ethanol" />
+      <RequiredItem identifier="tin" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="ethanol" mincondition="0.9" />
+    </Deconstruct>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="youmupaintbolt" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="tank">
+      <Containable items="youmupaintbolt" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="youmupaintbolt" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+  </Item>
+  
+  <Item name="" identifier="youmupaintbolt" category="Misc" interactthroughwalls="true" cargocontaineridentifier="chemicalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="%ModDir%/Images/Transparent.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Images/Transparent.png" sourcerect="0,0,17,6" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="14" density="5" />
+    <Projectile characterusable="false" launchimpulse="5" damagedoors="true">
+      <StatusEffect type="OnUse" target="This" delay="0.1">
+        <Explosion range="0.0" structuredamage="0" itemdamage="0" force="0.0" severlimbsprobability="0.0" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" flash="false" camerashake="0.0" decal="youmu_decal" decalsize="1.0" />
+        <Remove/>
+	  </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  
+  <Item name="" identifier="youmudecalmask" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.25" hideinmenus="false">
+    <PreferredContainer primary="crewcab"/>
+    <Price baseprice="75">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantresearch" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" minavailable="1" />
+      <Price storeidentifier="merchantmine" minavailable="1" />
+    </Price>
+    <Deconstruct time="5" />
+    <Sprite name="" texture="%ModDir%/Images/Youmu_Items/Youmu_Decal.png" sourcerect="0,0,160,176" origin="0.5,0.5" depth="0.6" />
+    <Body width="160" height="90" density="20" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <sprite name="" texture="%ModDir%/Images/Youmu_Items/Youmu_Decal.png" sourcerect="0,0,160,176" origin="0.55,0.5" limb="Head" hidelimb="false" hideotherwearables="false" inheritlimbdepth="false" depth="0.04" scale="0.25"/>
+      <damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" />
+      <damagemodifier afflictionidentifiers="bitewounds, blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.3" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" />
+	</Wearable>
+  </Item>
+  
+  <Item name="" identifier="youmusmg" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallautoweapon,smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" amount="1" spawnprobability="0.1"/>
+    <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.05"/>
+    <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" amount="1" spawnprobability="0.025"/>
+    <PreferredContainer secondary="armcab,weaponholder"/>
+    <Price baseprice="390" sold="false">
+      <Price storeidentifier="merchantoutpost"  multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25"/>
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="55" />
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+	  <RequiredItem identifier="youmupaint"/>
+    </Fabricate>
+	<Fabricate suitablefabricators="fabricator" requiredtime="15" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="smg" />
+      <RequiredItem identifier="youmupaint"/>
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="smg" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Images/Youmu_Items/Youmusmg_Icon.png" sourcerect="0,0,65,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Images/Youmu_Items/Youmusmg_Sprite.png" sourcerect="0,0,147,79" depth="0.55" origin="0.5,0.5" />
+    <Body width="140" height="60" density="25" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="45,-10" handle1="-30,-15" handle2="26,5" holdangle="-35" msg="ItemMsgPickUpSelect"/>
+    <RangedWeapon reload="0.19" weapondamagemodifier="1.3" penetration="0.15" holdtrigger="true" barrelpos="64,9" spread="10" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot2.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot3.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot4.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot5.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot6.ogg" type="OnUse" range="3000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
+      </StatusEffect>
+      <!--"Use" contained magazine to spawn projectiles.-->
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <RequiredItems items="smgammo" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="50" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+      <Containable items="smgammo" hide="false" itempos="4,-10" rotation="-30"/>
+      <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="flashlight" hide="false" itempos="22,-1" setactive="true"/>
+      </SubContainer>
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.1"/>
+    </Quality>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  
+  <Item name="" identifier="youmuceremonialsword" category="Weapon" Tags="smallitem,weapon,gunsmith,mountableweapon" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <PreferredContainer primary="secarmcab" secondary="armcab"/>
+    <Price baseprice="340" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+	<InventoryIcon texture="%ModDir%/Images/Youmu_Items/Youmuceremonialsword_Icon.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Images/Youmu_Items/Youmuceremonialsword_Sprite.png" sourcerect="0,0,172,25" depth="0.55" origin="0.5,0.5" />
+    <Body width="172" height="20" density="30" />
+    <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="35,10" handle1="-33,0" holdangle="30" aimangle="20" reload="0.75" range="75" combatPriority="30" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="2" severlimbsprobability="0.55" itemdamage="6" structuredamage="1" structuresoundtype="StructureSlash" penetration="1">
+        <Affliction identifier="lacerations" strength="19" />
+        <Affliction identifier="bleeding" strength="14" />
+        <Affliction identifier="stun" strength="0.25" />
+      </Attack>
+      <StatusEffect type="OnUse" target="UseTarget">
+        <Conditional entitytype="eq Character"/>
+        <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnSuccess" target="This" reload="0.4" setvalue="true">
+        <Conditional reload="gt 0.4" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This" reload="1.5" setvalue="true" />
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredSkill identifier="helm" level="50" />
+      <RequiredSkill identifier="electrical" level="50" />
+      <RequiredSkill identifier="mechanical" level="50" />
+      <RequiredSkill identifier="medical" level="50" />
+      <!--Reset the reload speed-->
+      <StatusEffect type="OnUse" target="This" reload="0.75" setvalue="true" delay="1"/>
+    </MeleeWeapon>
+    <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+    <Quality>
+      <QualityStat stattype="StrikingPowerMultiplier" value="0.15"/>
+    </Quality>
+    <SkillRequirementHint identifier="weapons" level="50" />
+    <SkillRequirementHint identifier="helm" level="50" />
+    <SkillRequirementHint identifier="electrical" level="50" />
+    <SkillRequirementHint identifier="mechanical" level="50" />
+    <SkillRequirementHint identifier="medical" level="50" />
+  </Item>
+  
+  <Item name="" identifier="youmuwatermelon" category="Material" maxstacksize="8" Tags="smallitem,plantitem,petfood1,petfood2,petfood3" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" impacttolerance="5.5" allowasextracargo="true">
+    <InventoryIcon texture="%ModDir%/Images/Youmu_Items/Watermelon_Icon.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+	<Sprite texture="%ModDir%/Images/Youmu_Items/Watermelon_Sprite.png" depth="0.2" sourcerect="0,0,68,80" origin="0.5,0.5" />
+    <Body radius="30" density="9" />
+    <Price baseprice="20" sold="false">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" />
+      <Price storeidentifier="merchantresearch" multiplier="1.1" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.8" />
+      <Price storeidentifier="merchantmine" multiplier="0.75" />
+    </Price>
+    <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="30" fabricationlimitmin="0" fabricationlimitmax="1"/>
+    <Deconstruct time="35">
+      <Item identifier="carbon" mincondition="0.5" />
+    </Deconstruct>
+    <Throwable characterusable="true" canBeCombined="false" slots="Any,RightHand,LeftHand" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true">
+        <Explosion range="0.0" structuredamage="0" itemdamage="0" force="0.0" severlimbsprobability="0.0" decal="fruitsplatter_red" decalsize="1.0" />
+        <ParticleEmitter particle="whitegoosplash" anglemin="0" anglemax="360" particleamount="2" velocitymin="0" velocitymax="0" scalemin="1.5" scalemax="2" />
+        <ParticleEmitter particle="fruitchunks" anglemin="0" anglemax="360" particleamount="10" velocitymin="200" velocitymax="300" scalemin="0.4" scalemax="0.8" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="-50.0" />
+      <StatusEffect type="OnBroken" target="This" Condition="-100.0">
+        <Remove />
+      </StatusEffect>
+    </Throwable>
+    <AiTarget sightrange="1000" static="true" />
+    <PreferredContainer primary="plantcontainer"/>
+  </Item>
+</Items>

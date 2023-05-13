@@ -1,0 +1,78 @@
+<Randomevents>
+  <EventSprites>
+    <Sprite identifier="youmujoin" texture="%ModDir%/Images/Youmu_Items/Youmu_Decal.png" sourcerect="0,0,160,176" origin="0.5,0.5"/>
+  </EventSprites>
+  <EventPrefabs>
+    <ScriptedEvent identifier="youmujoin" commonness="100">
+      <CheckDataAction identifier="youmujoin_complete" condition="eq true">
+        <Success>
+          <!--Don't repeat event-->
+        </Success>
+        <Failure>
+          <TagAction criteria="player" tag="player" />
+		  <SpawnAction npcsetidentifier="touhounpc" npcidentifier="youmukonpaku" targettag="youmu" spawnlocation="Outpost" targetmoduletags="airlock" />
+		  <TriggerAction target1tag="youmu" target2tag="player" applytotarget1="targetyoumu" applytotarget2="triggerer_player" radius="150" waitforinteraction="true" />
+		  <ConversationAction targettag="triggerer_player" text="EventText.youmujoin.c1" eventsprite="youmujoin">
+			<Option text="EventText.youmujoin.o1">
+			  <ConversationAction targettag="triggerer_player" text="EventText.youmujoin.c2" eventsprite="youmujoin">
+			    <Option text="EventText.youmujoin.o2">
+				  <ConversationAction targettag="triggerer_player" text="EventText.youmujoin.c3" eventsprite="youmujoin">
+					<Option text="EventText.youmujoin.o3">
+					<CheckItemAction targettag="triggerer_player" itemidentifiers="youmuwatermelon">
+					  <Success>
+					  <Label name="checkwatermelon" />
+					  <RemoveItemAction targettag="triggerer_player" itemidentifier="youmuwatermelon" />
+					  <ConversationAction targettag="triggerer_player" text="EventText.youmujoin.c3.c1" eventsprite="youmujoin">
+						<Option text="EventText.youmujoin.c3.o1">
+						  <ConversationAction targettag="triggerer_player" text="EventText.youmujoin.c3.o1.c1" eventsprite="youmujoin"/>
+						  <NPCChangeTeamAction npctag="youmu" teamid="Team1" addtocrew="true" />
+						  <SetDataAction identifier="youmujoin_complete" value="true"/>
+						</Option>
+					    <Option text="EventText.youmujoin.c3.o2">
+						  <ConversationAction targettag="triggerer_player" text="EventText.youmujoin.c3.o2.c1" eventsprite="youmujoin"/>
+						  <NPCChangeTeamAction npctag="youmu" teamid="Team1" addtocrew="true" />
+						  <SetDataAction identifier="youmujoin_complete" value="true"/>
+						</Option>
+			          </ConversationAction>
+					  </Success>
+					  <Failure>
+					  <ConversationAction targettag="triggerer_player" text="EventText.youmujoin.c3.c2">
+						<Option text="EventText.youmujoin.c3.c2.o1">
+						<ConversationAction targettag="triggerer_player" text="EventText.youmujoin.c3.c2.c1" />
+						<Label name="waitingforwatermelon" />
+						<ConversationAction text="EventText.youmujoin_return.c1" eventsprite="youmujoin" speakertag="youmu" dialogtype="Small">
+                        <Option text="EventText.youmujoin_return.o1" endconversation="true">
+                          <CheckItemAction targettag="triggerer_player" itemidentifiers="youmuwatermelon">
+                            <Success>
+                              <GoTo name="checkwatermelon" />
+                            </Success>
+                            <Failure>
+                              <ConversationAction targettag="triggerer_player" waitforinteraction="false" text="EventText.youmujoin_return.o1.c2" eventsprite="youmujoin" dialogtype="Small" />
+                              <GoTo name="waitingforwatermelon" />
+                            </Failure>
+                          </CheckItemAction>
+                        </Option>
+                        <Option text="EventText.youmujoin_return.o2" endconversation="true">
+                          <GoTo name="waitingforwatermelon" />
+                        </Option>
+                        </ConversationAction>
+                        </Option>
+                        <Option text="EventText.youmujoin.c3.c2.o2" />
+                      </ConversationAction>
+                      </Failure>
+					</CheckItemAction>
+					</Option>
+				  </ConversationAction>
+			    </Option>
+			  </ConversationAction>
+            </Option>
+          </ConversationAction>
+        </Failure>
+      </CheckDataAction>
+    </ScriptedEvent>
+  </EventPrefabs>
+
+  <EventSet identifier="touhouevents" leveltype="outpost" locationtype="outpost,city,research,military,mine" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="80" chooserandom="true" campaign="true" additive="true">
+    <ScriptedEvent identifier="youmujoin" commonness="100" triggercooldown="false"/>
+  </EventSet>
+</Randomevents>

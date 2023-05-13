@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<npcsets>
+   <npcset identifier="touhounpc">
+	<npc identifier="youmukonpaku" moduleflags="none" behavior="Passive">
+      <Character speciesname="human" tags="female,head14" experiencepoints="10000" additionaltalentpoints="0" hairindex="7" beardindex="0" moustacheindex="0" faceattachmentindex="10" skincolor="200,165,131,255" haircolor="71,54,55,255" facialhaircolor="106,59,55,255" startitemsgiven="false" ragdoll="" personality="tough" missionscompletedsincedeath="0">
+        <job identifier="securityofficer">
+          <skill identifier="weapons" level="150" />
+          <skill identifier="mechanical" level="50" />
+          <skill identifier="electrical" level="50" />
+          <skill identifier="medical" level="50" />
+          <skill identifier="helm" level="75" />
+        </job>
+        <talents>
+        </talents>
+      </Character>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="headset" equip="true" showpreview="false"/>
+        <Item identifier="youmugear" equip="true"/>
+		<Item identifier="youmudecalmask" equip="false"/>
+		<Item identifier="youmusmg" equip="false">
+		  <Item identifier="smgmagazine" amount="1" quality="3"/>
+		</Item>
+		<Item identifier="smgmagazine" amount="2" equip="false"/>
+		<Item identifier="youmuceremonialsword" equip="false"/>
+      </ItemSet>
+    </npc>
+  </npcset>
+</npcsets>

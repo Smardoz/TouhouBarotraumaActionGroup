@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+ <Affliction
+    identifier="bloodpackB"
+    type="talentbuff"
+    isbuff="true"
+    limbspecific="false"
+    hideiconafterdelay="false"
+    maxstrength="1"
+    treatmentthreshold="1000"
+    showiconthreshold="1000"
+	showinhealthscannerthreshold="1000"
+    iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-0.6">
+	</Effect>  
+    <icon texture="%ModDir%/Images/Transparent.png" sourcerect="0,0,128,128" color="0,0,0,0" origin="0,0"/>
+  </Affliction>
+  <Affliction
+    identifier="scarletdevil"
+    type="talentbuff"
+    isbuff="true"
+    limbspecific="false"
+    hideiconafterdelay="false"
+    maxstrength="1"
+    duration="1"
+    iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
+    <Effect minstrength="0" maxstrength="1">
+    </Effect>
+    <Icon texture="%ModDir%/Images/TalentsIcon/Remilia/TalentsIcons_Remilia.png" sheetindex="1,0" sheetelementsize="128,128"/>
+  </Affliction>
+  <Affliction
+    identifier="demonkingcradle"
+    type="talentbuff"
+    isbuff="true"
+    limbspecific="false"
+    hideiconafterdelay="false"
+    maxstrength="1"
+    duration="1"
+    iconcolors="255,36,0;255,36,0;255,36,0;255,36,0">
+    <Effect minstrength="0" maxstrength="1" >
+	  <StatValue stattype="MovementSpeed" value="0.2" />
+	  <StatusEffect target="Character">
+	    <Reduceaffliction identifier="bitewounds" amount="1.33"/>
+		<Affliction identifier="psychosisresistance" amount="600" />
+      </StatusEffect>
+    </Effect>
+    <Icon texture="%ModDir%/Images/TalentsIcon/Remilia/TalentsIcons_Remilia.png" sheetindex="1,0" sheetelementsize="128,128"/>
+  </Affliction>
+</Afflictions>

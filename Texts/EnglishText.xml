@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" translatedname="English" nowhitespace="false">
+  <!-- General -->
+  <entityname.touhousprayer>Touhou Sprayer</entityname.touhousprayer>
+  <entitydescription.touhousprayer>A special sprayer for touhou decals.</entitydescription.touhousprayer>
+  <itemmsgtouhoupaintrequired>Touhou paint required</itemmsgtouhoupaintrequired>
+  <!-- Remilia -->
+  <jobname.remiliahidden>Remilia(hidden)</jobname.remiliahidden>
+  <entityname.remiliagear>‖color:255,36,0,255‖Remilia Costume‖color:end‖</entityname.remiliagear>
+  <entitydescription.remiliagear>‖color:255,36,0,255‖The spilt blood dyes her dress a deep scarlet, which is what gives rise to her title, the "Scarlet Devil".‖color:end‖\n‖color:150,150,150,255‖Note: Remember to take a look at the talent interface after wearing it~‖color:end‖\n &#x0020;‖color:gui.green‖+3%‖end‖&#x0020;Bleeding</entitydescription.remiliagear>
+  <entityname.bloodpackB>High Quality Type-B Bloodpack</entityname.bloodpackB>
+  <entitydescription.bloodpackB>No different from ordinary bloodpacks. If you insist on the difference, it is more delicious for vampires.</entitydescription.bloodpackB>
+  <talentname.demonkingcradle>Night Sign "Demon King Cradle"</talentname.demonkingcradle>
+  <talentdescription.demonkingcradle>When wearing ‖color:gui.orange‖Remilia Costume‖end‖, using ‖color:gui.orange‖High Quality Type-B Bloodpack‖end‖ grants you:\n Heals ‖color:gui.orange‖Bite wounds‖end‖.\n‖color:gui.green‖+20%‖end‖ ‖color:gui.orange‖Movement Speed‖end‖.\n Gains ‖color:gui.orange‖Psychosis resistance‖end‖.\n\n‖color:150,150,150,255‖Remilia indeed is no exception from being self-centered and selfish. Type-B blood tastes the most delicious to her. \n\n————Imperishable Night‖color:end‖</talentdescription.demonkingcradle>
+  <afflictionname.scarletdevil>Scarlet Devil</afflictionname.scarletdevil>
+  <afflictiondescription.scarletdevil>Full of authority!</afflictiondescription.scarletdevil>
+  <afflictionname.demonkingcradle>Night Sign "Demon King Cradle"</afflictionname.demonkingcradle>
+  <afflictiondescription.demonkingcradle>"It would be better if served with Sakuya's black tea~"</afflictiondescription.demonkingcradle>
+  <entityname.remiliapaint>‖color:255,36,0,255‖Realm of Scarlet Devil Mansion(Remilia Paint)‖color:end‖</entityname.remiliapaint>
+  <entitydescription.remiliapaint>A bottle of paint for Remilia decals that can be used in the touhou sprayer.\n‖color:255,36,0,255‖On the shore of a lake in Gensokyo, there is a scarlet mansion.\nShe is the mistress of that mansion.\n————Imperishable Night‖color:end‖</entitydescription.remiliapaint>
+  <entityname.remiliadecalmask>‖color:255,36,0,255‖Remilia Decal Mask‖color:end‖</entityname.remiliadecalmask>
+  <entitydescription.remiliadecalmask>‖color:255,36,0,255‖The feeling of wearing it is surprisingly good.‖color:end‖</entitydescription.remiliadecalmask>
+  <entityname.remiliaharpoongun>‖color:255,36,0,255‖Harpoon Gun|Remilia Scarlet‖color:end‖</entityname.remiliaharpoongun>
+  <entitydescription.remiliaharpoongun>‖color:255,36,0,255‖Spear the Gungnir. Common version.‖color:end‖</entitydescription.remiliaharpoongun>
+  <!-- Youmu -->
+  <entityname.youmugear>‖color:156,158,161,255‖Youmu Costume‖color:end‖</entityname.youmugear>
+  <entitydescription.youmugear>‖color:156,158,161,255‖She's half-human and half-phantom, half-dead and half-alive, half-phantom and half-reality, and altogether half-baked. Yet she has two swords. \n————Immaterial and Missing Power‖color:end‖</entitydescription.youmugear>
+  <entityname.youmupaint>‖color:156,158,161,255‖Autumn Cherry in the Netherworld(Youmu Paint)‖color:end‖</entityname.youmupaint>
+  <entitydescription.youmupaint>A bottle of paint for Youmu decals that can be used in the touhou sprayer.\n‖color:156,158,161,255‖Roukanken's sheath has an autumn cherry(Cosmos bipinnatus) on top of it attached with a seal and a little rope. \nIt's said that it has the power to kill ten phantoms in one strike."The things that cannot be cut by my Roukanken, forged by youkai, are close to none!"\n————Immaterial and Missing Power‖color:end‖</entitydescription.youmupaint>
+  <entityname.youmudecalmask>‖color:156,158,161,255‖Youmu Decal Mask‖color:end‖</entityname.youmudecalmask>
+  <entitydescription.youmudecalmask>‖color:156,158,161,255‖The feeling of wearing it is surprisingly good.‖color:end‖</entitydescription.youmudecalmask>
+  <entityname.youmusmg>‖color:156,158,161,255‖SMG|Youmu Konpaku‖color:end‖</entityname.youmusmg>
+  <entitydescription.youmusmg>‖color:156,158,161,255‖Europan Iaido!‖color:end‖</entitydescription.youmusmg>
+  <entityname.youmuceremonialsword>‖color:156,158,161,255‖Ceremonial Sword|Youmu Konpaku‖color:end‖</entityname.youmuceremonialsword>
+  <entitydescription.youmuceremonialsword>‖color:156,158,161,255‖It's believed that Roukanken was forged by youkai, and it's too long to be used by normal humans. It's said that it has the power to kill ten phantoms in one stroke, but as one cannot actually kill phantoms(*4:Normally they are sent to nirvana or disappear. ), it's unknown if this is true(*5:Supposedly the things it cannot cut are next to none. ). ————Perfect Memento in Strict Sense‖color:end‖</entitydescription.youmuceremonialsword>
+  <entityname.youmuwatermelon>Watermelon(Mission item)</entityname.youmuwatermelon>
+  <entitydescription.youmuwatermelon>The latest achievements of Europa hydroponics technology. Unfortunately, it can only fill the stomach and cannot cure the injury.</entitydescription.youmuwatermelon>
+  <charactername.youmukonpaku>Youmu Konpaku</charactername.youmukonpaku>
+  <eventtext.youmujoin.c1>Europa, as usual. The noisy station, the moving crowds, and your damn headache... As you went through the airlock at the outpost, you think like this.\n\nHowever, as you climb up the ladder and enter the station, an inexplicable sense of disobedience pulls your attention away. \n\nThe source of the sense of disobedience is a young girl who seems to be closing her eyes and recuperating herself ———— she looks about fifteen years old, her delicate face surpasses the most exaggerated propaganda of Europa Coalition for their leaders, and her silver hair makes you inexplicably think of the light reflected from the sunken ship's porthole. \n\nShaking your head and letting go of this unlucky thought, you notice that she wears two sword scabbards around her waist, but they all seem to be empty. \n\nYou can't help but wonder, for god's sake what causes such a girl to be here?</eventtext.youmujoin.c1>
+  <eventtext.youmujoin.o1>Come closer and have a look.</eventtext.youmujoin.o1>
+  <eventtext.youmujoin.c2>You are about to approach, but the seemingly unprepared girl raises her head first. \n\nAt that moment, you seemed to see a treasured sword waiting to be unsheathed ———— different from the boarding axes stained with iron and blood rust by security officers, or ceremonial swords decorated with various striped ribbons by assistants, the girl in front of you felt like a weapon that could not be controlled by human power but had been honed in countless years after being extracted from the coldness of the vast ocean and given shape. Neither blood nor the undead will leave a trace on the natural edge. \n\nFor a moment, you have no doubt that, long before you realize it, she will cut you and the outpost you are in a single strike ———— even if the scabbards she is wearing are empty. \n\n"Do you have a watermelon, please?" The girl's voice was just like your imagination, clear but with a hint of sonority, like a sharp sword cutting through flying cherry blossoms ———— wait, watermelon?</eventtext.youmujoin.c2>
+  <eventtext.youmujoin.o2>"Watermelon?"</eventtext.youmujoin.o2>
+  <eventtext.youmujoin.c3>"It's the kind of fruit with a spherical shape, a green skin, and black stripes on it... Could you please help me find one?" The girl makes a somewhat embarrassed request to you. \n\nYou just came back to your senses now ———— the girl in front of you seems to speak better than you think.</eventtext.youmujoin.c3>
+  <eventtext.youmujoin.o3>Find out if you have anything she wants on you.</eventtext.youmujoin.o3>
+  <eventtext.youmujoin.c3.c1>You happen to have a watermelon on you, and the girl seems quite happy. However, she quickly frowns again, as if wondering how to speak. \n\n"Well, I lost my way while chasing that rabbit, and I don't know where I am now... Could you give me a ride, please?"</eventtext.youmujoin.c3.c1>
+  <eventtext.youmujoin.c3.o1>"This is my honor, Miss Youmu Konpaku."</eventtext.youmujoin.c3.o1>
+  <eventtext.youmujoin.c3.o1.c1>The girl looks relieved. "Thank you!" You watches her run towards your submarine. Wait...... Did she tell you her name?</eventtext.youmujoin.c3.o1.c1>
+  <eventtext.youmujoin.c3.o2>"I'm sorry, but we're already full."</eventtext.youmujoin.c3.o2>
+  <eventtext.youmujoin.c3.o2.c1>You were supposed to say something like this, but this is Youmu! How can we not let her join us? Is it ever possible that someone would refuse her with such coldness?</eventtext.youmujoin.c3.o2.c1>
+  <eventtext.youmujoin.c3.c2>After some searching, it seems that you don't have any watermelon on you. Looking up, the girl is waiting for your answer.</eventtext.youmujoin.c3.c2>
+  <eventtext.youmujoin.c3.c2.o1>"Sorry, I'm afraid I don't have what you want here. But I can try to find one..."</eventtext.youmujoin.c3.c2.o1>
+  <eventtext.youmujoin.c3.c2.c1>The girl sighs slightly and stops paying attention to you. "What should I do? Yuyuko sama will..." As you left, you seemed to hear her muttering something. Speaking of watermelon, perhaps there will be one in the vending machine at the outpost?</eventtext.youmujoin.c3.c2.c1>
+  <eventtext.youmujoin_return.c1>With the sense of disobedience on her, you easily find the girl at the outpost.</eventtext.youmujoin_return.c1>
+  <eventtext.youmujoin_return.o1>"Excuse me, I got the watermelon you asked for..."</eventtext.youmujoin_return.o1>
+  <eventtext.youmujoin_return.o1.c2>You wanted to say that, but suddenly it occurred to you that you didn't actually have a watermelon with you.</eventtext.youmujoin_return.o1.c2>
+  <eventtext.youmujoin_return.o2>Don't disturb her.</eventtext.youmujoin_return.o2>
+  <eventtext.youmujoin.c3.c2.o2>"Sorry, I'm afraid I don't have what you want here. Let's go our separate ways."</eventtext.youmujoin.c3.c2.o2>
+  <!-- Marisa -->
+  <entityname.marisagear>‖color:255,255,0,255‖Marisa Costume‖color:end‖</entityname.marisagear>
+  <entitydescription.marisagear>‖color:255,255,0,255‖Ordinary Magician‖color:end‖</entitydescription.marisagear>
+  <entityname.marisahat>‖color:255,255,0,255‖Marisa Hat‖color:end‖</entityname.marisahat>
+  <entitydescription.marisahat>‖color:255,255,0,255‖Hat of Ordinary Magician‖color:end‖</entitydescription.marisahat>
+   <!-- Aya -->
+  <entityname.ayagear>‖color:255,255,255,255‖Aya。Costume‖color:end‖</entityname.ayagear>
+  <entitydescription.ayagear>‖color:255,255,255,255‖Aya Shameimaru is a crow tengu who is considered to be quite fast, even among other tengu. She flies around Gensokyo with her camera in one hand, and when she finds an interesting event, she leaves with a few photographs.\nThough she is a crow tengu, she looks basically the same as any human. ————Perfect Memento in Strict Sense‖color:end‖</entitydescription.ayagear>
+</infotexts>

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="" identifier="bloodpackB" category="Medical" maxstacksize="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,petfood1" useinhealthinterface="true" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <PreferredContainer primary="medcab" minamount="1" maxamount="2" notcampaign="true"/>
+    <PreferredContainer secondary="outpostmedcab" minamount="0" maxamount="1" spawnprobability="0.2"/>
+    <PreferredContainer secondary="outpostmedcompartment" amount="1" spawnprobability="0.025"/>
+    <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="0" maxamount="1" spawnprobability="0.2" />
+    <PreferredContainer secondary="medcontainer"/>
+    <Price baseprice="240">
+      <Price storeidentifier="merchantmedical" multiplier="0.9"/>
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="25" amount="2" >
+      <RequiredSkill identifier="medical" level="31" />
+      <RequiredItem identifier="alienblood" amount="2" />
+      <RequiredItem identifier="antibloodloss1" amount="2" />
+      <RequiredItem identifier="stabilozine" amount="1" />
+    </Fabricate>
+	<Fabricate suitablefabricators="medicalfabricator" requiredtime="10" amount="1" >
+      <RequiredSkill identifier="medical" level="5" />
+      <RequiredItem identifier="antibloodloss2" amount="1" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="sodium"  />
+      <Item identifier="stabilozine" />
+    </Deconstruct>
+    <SuitableTreatment type="bloodloss" suitability="120" />
+    <InventoryIcon texture="%ModDir%/Images/Remilia_Items/BloodpackB_Icon.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Images/Remilia_Items/BloodpackB_Sprite.png" sourcerect="0,0,80,44" depth="0.6" origin="0.5,0.5" />
+    <Body width="80" height="42" density="10.2" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <RequiredSkill identifier="medical" level="35" />
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnSuccess" target="UseTarget, This" duration="15">
+        <ReduceAffliction identifier="bloodloss" amount="8" />
+		<Affliction identifier="bloodpackB" amount="1"/>
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="UseTarget, This" duration="15">
+        <ReduceAffliction identifier="bloodloss" amount="4" />
+		<Affliction identifier="bloodpackB" amount="1"/>
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <AiTarget sightrange="1000" static="true" />
+  </Item>
+  
+   <Item name="" identifier="remiliapaint" category="Misc" maxstacksize="8" cargocontaineridentifier="chemicalcrate" description="" Tags="smallitem,touhoupaint" scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer secondary="storagecab" minamount="1" maxamount="2" spawnprobability="0.25" notcampaign="true"/>
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" amount="1" spawnprobability="0.1" />
+    <Price baseprice="100" minleveldifficulty="1">
+      <Price storeidentifier="merchantoutpost" multiplier="1.1" minavailable="1"/>
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantresearch" multiplier="1.2" minavailable="1"/>
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="1"/>
+      <Price storeidentifier="merchantmine" multiplier="1.2" minavailable="1"/>
+    </Price>
+    <InventoryIcon texture="%ModDir%/Images/Remilia_Items/Remiliapaint_Icon.png" sourcerect="0,0,60,55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Images/Remilia_Items/Remiliapaint_Sprite.png" sourcerect="0,0,37,71" depth="0.6" origin="0.5,0.5" />
+    <Body width="25" height="55" density="12" />
+	<Holdable slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="20" />
+      <RequiredItem identifier="ethanol" />
+      <RequiredItem identifier="tin" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="ethanol" mincondition="0.9" />
+    </Deconstruct>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="remiliapaintbolt" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="tank">
+      <Containable items="remiliapaintbolt" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="remiliapaintbolt" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+  </Item>
+  
+  <Item name="" identifier="remiliapaintbolt" category="Misc" interactthroughwalls="true" cargocontaineridentifier="chemicalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="%ModDir%/Images/Transparent.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Images/Transparent.png" sourcerect="0,0,17,6" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="14" density="5" />
+    <Projectile characterusable="false" launchimpulse="5" damagedoors="true">
+      <StatusEffect type="OnUse" target="This" delay="0.1">
+        <Explosion range="0.0" structuredamage="0" itemdamage="0" force="0.0" severlimbsprobability="0.0" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" flash="false" camerashake="0.0" decal="remilia_decal" decalsize="1.0" />
+        <Remove/>
+	  </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  
+  <Item name="" identifier="remiliadecalmask" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.25" hideinmenus="false">
+    <PreferredContainer primary="crewcab"/>
+    <Price baseprice="75">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantresearch" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" minavailable="1" />
+      <Price storeidentifier="merchantmine" minavailable="1" />
+    </Price>
+    <Deconstruct time="5" />
+    <Sprite name="" texture="%ModDir%/Images/Remilia_Items/Remilia_Decal.png" sourcerect="0,0,160,176" origin="0.5,0.5" depth="0.6" />
+    <Body width="160" height="90" density="20" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <sprite name="" texture="%ModDir%/Images/Remilia_Items/Remilia_Decal.png" sourcerect="0,0,160,176" origin="0.55,0.5" limb="Head" hidelimb="false" hideotherwearables="false" inheritlimbdepth="false" depth="0.04" scale="0.25"/>
+      <damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" />
+      <damagemodifier afflictionidentifiers="bitewounds, blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.3" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" />
+	</Wearable>
+  </Item>
+  
+  <Item name="" identifier="remiliaharpoongun" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer secondary="wreckweaponholder" spawnprobability="0.05" />
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab" amount="1" spawnprobability="0.1"/>
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
+    <Price baseprice="170" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="harpoongun" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="steel" amount="2" />
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem identifier="tin" amount="2" />
+	  <RequiredItem identifier="remiliapaint"/>
+    </Fabricate>
+	<Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="weapons" level="15" />
+      <RequiredItem identifier="harpoongun"/>
+      <RequiredItem identifier="remiliapaint"/>
+    </Fabricate>
+    <Sprite texture="%ModDir%/Images/Remilia_Items/Remiliaharpoongun_Sprite.png" sourcerect="0,0,183,40" depth="0.55" origin="0.5,0.5" />
+    <Body width="180" height="30" density="25" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="45,-10" handle1="-20,-6" handle2="30,10" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon reload="1.75" launchimpulse="20.0" barrelpos="85,14" spread="1" unskilledspread="10" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Sound file="Content/Items/Weapons/HarpoonGun1.ogg" type="OnUse" />
+      <Sound file="Content/Items/Weapons/HarpoonGun2.ogg" type="OnUse" />
+      <Sound file="Content/Items/Weapons/HarpoonGun3.ogg" type="OnUse" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
+      </StatusEffect>
+      <RequiredItems items="harpoonammo" type="Contained" msg="ItemMsgSpearRequired" />
+      <RequiredSkill identifier="weapons" level="30" />
+    </RangedWeapon>
+    <ItemContainer itempos="27,10" iteminterval="0,-4" hideitems="false" capacity="1" maxstacksize="6" containedstateindicatorslot="0" containedstateindicatorstyle="spear" containedspritedepths="0.551,0.552,0.553,0.554,0.555,0.556">
+      <Containable items="harpoonammo" />
+      <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="1,123,120,29" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="flashlight" hide="false" itempos="18,12" setactive="true"/>
+      </SubContainer>
+    </ItemContainer>
+    <aitarget sightrange="0" soundrange="500" fadeouttime="2" />
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.1"/>
+    </Quality>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+</Items>

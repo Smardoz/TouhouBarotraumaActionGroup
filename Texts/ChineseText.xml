@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Simplified Chinese" translatedname="中文(简体)" nowhitespace="false">
+  <!-- General -->
+  <entityname.touhousprayer>东方喷漆器</entityname.touhousprayer>
+  <entitydescription.touhousprayer>用于发射东方贴纸的特质喷漆器。</entitydescription.touhousprayer>
+  <itemmsgtouhoupaintrequired>需要装填东方涂料</itemmsgtouhoupaintrequired>
+  <!-- Remilia -->
+  <jobname.remiliahidden>蕾米莉亚（隐藏）</jobname.remiliahidden>
+  <entityname.remiliagear>‖color:255,36,0,255‖蕾米莉亚装束‖color:end‖</entityname.remiliagear>
+  <entitydescription.remiliagear>‖color:255,36,0,255‖洒落了的血使洋装变得鲜红，故被称为「Scarlet Devil（绯红恶魔）」。‖color:end‖\n‖color:150,150,150,255‖注：穿上后记得看看天赋栏~‖color:end‖\n &#x0020;‖color:gui.green‖+3%‖end‖&#x0020;出血</entitydescription.remiliagear>
+  <entityname.bloodpackB>优质B型血</entityname.bloodpackB>
+  <entitydescription.bloodpackB>与寻常的血袋没什么区别，硬要说区别的话就是对吸血鬼而言更为美味。</entitydescription.bloodpackB>
+  <talentname.demonkingcradle>夜符「Demon King Cradle」</talentname.demonkingcradle>
+  <talentdescription.demonkingcradle>当你身着‖color:gui.orange‖蕾米莉亚装束‖end‖时，使用‖color:gui.orange‖优质B型血‖end‖给予你：\n治疗‖color:gui.orange‖咬伤‖end‖。\n‖color:gui.green‖+20%‖end‖‖color:gui.orange‖移动速度‖end‖。\n获得‖color:gui.orange‖精神病抗性‖end‖。\n\n‖color:150,150,150,255‖蕾米莉亚也同样遵从此定律，是个严重的自我主义者。B型血最美味。\n\n————《东方永夜抄》‖color:end‖</talentdescription.demonkingcradle>
+  <afflictionname.scarletdevil>猩红恶魔</afflictionname.scarletdevil>
+  <afflictiondescription.scarletdevil>威严满满！</afflictiondescription.scarletdevil>
+  <afflictionname.demonkingcradle>夜符「Demon king Cradle」</afflictionname.demonkingcradle>
+  <afflictiondescription.demonkingcradle>“如果能配上咲夜的红茶就更好了呢~”</afflictiondescription.demonkingcradle>
+  <entityname.remiliapaint>‖color:255,36,0,255‖红魔馆之乡（蕾米莉亚涂料）‖color:end‖</entityname.remiliapaint>
+  <entitydescription.remiliapaint>一罐蕾米莉亚的贴纸涂料，装入东方喷漆器中使用。\n‖color:255,36,0,255‖蕾米莉亚居住在红魔馆中。\n在位于幻想乡的湖边，有一栋红色的房屋。\n她是掌管那里的大小姐。\n————《东方永夜抄》‖color:end‖</entitydescription.remiliapaint>
+  <entityname.remiliadecalmask>‖color:255,36,0,255‖蕾米莉亚贴纸面具‖color:end‖</entityname.remiliadecalmask>
+  <entitydescription.remiliadecalmask>‖color:255,36,0,255‖戴在脸上意外的不错呢。‖color:end‖</entitydescription.remiliadecalmask>
+  <entityname.remiliaharpoongun>‖color:255,36,0,255‖鱼叉枪|蕾米莉亚·斯卡蕾特‖color:end‖</entityname.remiliaharpoongun>
+  <entitydescription.remiliaharpoongun>‖color:255,36,0,255‖冈格尼尔之枪。平民版。‖color:end‖</entitydescription.remiliaharpoongun> 
+  <!-- Youmu -->
+  <jobname.youmuhidden>妖梦（隐藏）</jobname.youmuhidden>
+  <entityname.youmugear>‖color:156,158,161,255‖妖梦装束‖color:end‖</entityname.youmugear>
+  <entitydescription.youmugear>‖color:156,158,161,255‖住在白玉楼工作的庭师。半人半幽灵、一半是生一半是死、一半是实体一半是虚幻的半吊子。但是剑有两把。\n————《东方萃梦想》‖color:end‖</entitydescription.youmugear>
+  <entityname.youmupaint>‖color:156,158,161,255‖冥界的秋樱（妖梦涂料）‖color:end‖</entityname.youmupaint>
+  <entitydescription.youmupaint>一罐妖梦的贴纸涂料，装入东方喷漆器中使用。\n‖color:156,158,161,255‖妖梦刀鞘上绑着一朵秋樱（大波斯菊）。\n楼观剑据说拥有一挥便可杀伤十只幽灵的威力，自称斩不断的东西几乎不存在。\n————《东方妖妖梦》‖color:end‖</entitydescription.youmupaint>
+  <entityname.youmudecalmask>‖color:156,158,161,255‖妖梦贴纸面具‖color:end‖</entityname.youmudecalmask>
+  <entitydescription.youmudecalmask>‖color:156,158,161,255‖戴在脸上意外的不错呢。‖color:end‖</entitydescription.youmudecalmask>
+  <entityname.youmusmg>‖color:156,158,161,255‖冲锋枪|魂魄妖梦‖color:end‖</entityname.youmusmg>
+  <entitydescription.youmusmg>‖color:156,158,161,255‖木卫二居合！‖color:end‖</entitydescription.youmusmg>
+  <entityname.youmuceremonialsword>‖color:156,158,161,255‖仪式用剑|魂魄妖梦‖color:end‖</entityname.youmuceremonialsword>
+  <entitydescription.youmuceremonialsword>‖color:156,158,161,255‖据传楼观剑是妖怪锻造的，太长不适合普通人类使用。一挥有杀伤十只幽灵的威力。不过幽灵是无法杀伤的（×4幽灵通常是成佛，或者消灭。），无法判断到底有多少成分是真实的（×5据说斩不断的东西几乎不存在。）。\n————《东方求闻史纪》‖color:end‖</entitydescription.youmuceremonialsword>
+  <entityname.youmuwatermelon>西瓜（任务物品）</entityname.youmuwatermelon>
+  <entitydescription.youmuwatermelon>木卫二水培技术的最新成果。可惜的是，这玩意只能填饱肚子而无法治疗伤势。</entitydescription.youmuwatermelon>
+  <charactername.youmukonpaku>魂魄妖梦</charactername.youmukonpaku>
+  <eventtext.youmujoin.c1>又是如往常一样的木卫二。喧嚣的站点，走动的人群，还有你那该死的头痛......穿过站点的气闸时，你这样想着。\n\n然而在你爬上梯子，进入站点时，一股莫名的违和感将你的注意力牵引了过去。\n\n违和感的源头是一位似乎正在闭目养神的少女————她看起来十多岁左右，精致的面庞胜过木卫二联盟对他们领袖最夸张的宣传，而那银白色的头发让你莫名的想到了沉船舷窗上反射的光芒。甩甩头抛开这不吉利的想法，你注意到她腰上佩着两把剑鞘，不过它们似乎都是空的。\n\n你不由得有些好奇，这样一位与这里格格不入的少女，究竟是何方神圣？</eventtext.youmujoin.c1>
+  <eventtext.youmujoin.o1>走近些看看吧。</eventtext.youmujoin.o1>
+  <eventtext.youmujoin.c2>你正准备靠近，然而那看似毫无防备的少女却先一步抬起了头。\n\n那一瞬间，你仿佛看到了一柄正待出鞘的宝剑————不同于那些安全官们浸染着铁血锈迹的登船斧，亦或是助手们装饰着各种条纹绶带的仪式剑，眼前的少女给你的感觉，如同是将那汪洋的冰冷抽离出来赋予了形体，又在数不清的年月中加以磨砺，锻造成的、非以人力能驾驭的兵刃。无论是鲜血亦或是亡灵，都不会在那浑然天成的锋刃上留下一丁点痕迹。\n\n有一瞬间，你丝毫不怀疑，早在你意识到之前，她会将你、连同你所在的站点一刀两断————即使她佩戴的剑鞘都是空的。\n\n“请问您有西瓜吗？”少女的声音恰如你的想象，清脆但又有着些许铿锵之意，如同凌厉的剑光斩碎飞舞的樱花一般———等等，西瓜？</eventtext.youmujoin.c2>
+  <eventtext.youmujoin.o2>“西瓜？”</eventtext.youmujoin.o2>
+  <eventtext.youmujoin.c3>“就是那种球形、绿色外皮、上面有着黑色条纹的水果......请问您能帮我找来一个吗？”少女有些不好意思般的向你提出了请求。\n\n你这时才回过神来————眼前的少女似乎比你想的要好说话一些。</eventtext.youmujoin.c3>
+  <eventtext.youmujoin.o3>找找身上有没有她要的东西。</eventtext.youmujoin.o3>
+  <eventtext.youmujoin.c3.c1>你身上恰好携带了西瓜，少女似乎很高兴的样子。然而她很快又皱起了眉头，好像在烦恼着该怎么开口。\n\n“是这样的，我在追那只兔子时迷了路，现在也不知道自己在哪里了......请问您能载我一程吗？”</eventtext.youmujoin.c3.c1>
+  <eventtext.youmujoin.c3.o1>“这是我的荣幸，魂魄妖梦小姐。”</eventtext.youmujoin.c3.o1>
+  <eventtext.youmujoin.c3.o1.c1>少女一副松了口气的样子，“谢谢您！”你看着她向着你的潜艇跑去。等等......她有和你说过她的名字吗？</eventtext.youmujoin.c3.o1.c1>
+  <eventtext.youmujoin.c3.o2>“抱歉，但是我们已经满员了。”</eventtext.youmujoin.c3.o2>
+  <eventtext.youmujoin.c3.o2.c1>你本来准备这么应付她的，但这是妖梦哎！怎么能不让她加入呢？难道真的有人会狠下心拒绝吗？</eventtext.youmujoin.c3.o2.c1>
+  <eventtext.youmujoin.c3.c2>一顿翻找之后，你身上似乎并没有西瓜。抬头看去，少女正等待着你的回答。</eventtext.youmujoin.c3.c2>
+  <eventtext.youmujoin.c3.c2.o1>“抱歉，我这儿恐怕没有你要的东西。不过我可以试着去找找......”</eventtext.youmujoin.c3.c2.o1>
+  <eventtext.youmujoin.c3.c2.c1>少女微微叹了口气便不再理会你。“怎么办啊，这样幽幽子大人会......”在你离开时，你似乎听到她在嘀咕着什么。说到西瓜，或许站点的售货机里会有？</eventtext.youmujoin.c3.c2.c1>
+  <eventtext.youmujoin_return.c1>凭借着她身上的那股违和感，你轻易地在站点中找到了那位少女。</eventtext.youmujoin_return.c1>
+  <eventtext.youmujoin_return.o1>“你好，你要的西瓜我弄到了......”</eventtext.youmujoin_return.o1>
+  <eventtext.youmujoin_return.o1.c2>你本来想这么说的，但是突然想起来你的身上其实并没有带西瓜。</eventtext.youmujoin_return.o1.c2>
+  <eventtext.youmujoin_return.o2>不去打扰她。</eventtext.youmujoin_return.o2>
+  <eventtext.youmujoin.c3.c2.o2>“抱歉，我这儿恐怕没有你要的东西。我们还是各走各的路吧。”</eventtext.youmujoin.c3.c2.o2>
+  <!-- Marisa -->
+  <entityname.marisagear>‖color:255,255,0,255‖魔理沙装束‖color:end‖</entityname.marisagear>
+  <entitydescription.marisagear>‖color:255,255,0,255‖普通的魔法使‖color:end‖</entitydescription.marisagear>
+  <entityname.marisahat>‖color:255,255,0,255‖魔理沙帽子‖color:end‖</entityname.marisahat>
+  <entitydescription.marisahat>‖color:255,255,0,255‖普通的魔法使的帽子‖color:end‖</entitydescription.marisahat>
+  <!-- Aya -->
+  <entityname.ayagear>‖color:255,255,255,255‖文文。装束‖color:end‖</entityname.ayagear>
+  <entitydescription.ayagear>‖color:255,255,255,255‖射命丸文是天狗之中速度很快的鸦天狗。手持相机，在幻想乡各处奔走，记录下各种有趣的事件。\n虽说是鸦天狗，外表和人类并无太大差别。\n————《东方求闻史纪》‖color:end‖</entitydescription.ayagear>
+</infotexts>
